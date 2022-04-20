@@ -66,9 +66,9 @@
 		/*메뉴*/
 		menu{display:flex ; flex-wrap: wrap; margin: auto; padding: 0; position: fixed; z-index: 30; text-decoration: none;}
 		menu ul{list-style: none;}
-		menu li{font-size: 20px;  text-decoration: none;}
+		menu li{display: block;font-size: 20px;  text-decoration: none;}
 		menu a{padding: 8px; color: black;  text-decoration: none;}
-		menu li:hover{font-size: ;}
+		menu li:hover{font-size:24px;}
 
 		/*이미지*/
 		/*1p 거울*/
@@ -111,7 +111,8 @@
 
 </head>
 <body>
-	<!-- <menu class="green1">
+<!-- 	<section class="black">
+	<menu class="green1 flex">
 		<ul>
 		<li><a href=#b>스토리</a></li>
 		<br>
@@ -123,7 +124,8 @@
 		<br>
 		<li><a href=#j>주의사항</a></li>
 		</ul>
-	</menu> -->
+	</menu>
+	</section> -->
 
 	<a class="up" href=#a><img src="up.png" style="width: 60px; "></a>
 
@@ -282,9 +284,8 @@
 
 	<section class="black">
 	<div class="flex back green1 box height" id="i">
-		<div class="col-3"></div>
-
-		<div class="col-3">
+		<div class="col-3" style="z-index: 3;"></div>
+		<div class="col-3" style="z-index: 3;">
 			<div>
 			<p style="font-size: 30pt;padding-top: 100px;">
 			Special Option
@@ -301,6 +302,8 @@
 			<input class="clickbutton" type="button" onclick="alert('저장되었습니다.')" value="저장하기" style="float: right;">
 			</div>
 		</div>
+	<img src="box2.png" style="width:1200px;position: absolute; z-index:2;">
+	<img src="msgrain3.gif" style="position:absolute; z-index:0; opacity: 75%;">
 	</div>
 	</section>
 	
